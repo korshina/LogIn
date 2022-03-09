@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		C395DD9027D798F30025B5B2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395DD8F27D798F30025B5B2 /* AppDelegate.swift */; };
 		C395DD9227D798F30025B5B2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395DD9127D798F30025B5B2 /* SceneDelegate.swift */; };
-		C395DD9427D798F30025B5B2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395DD9327D798F30025B5B2 /* ViewController.swift */; };
+		C395DD9427D798F30025B5B2 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395DD9327D798F30025B5B2 /* LogInViewController.swift */; };
 		C395DD9727D798F30025B5B2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C395DD9527D798F30025B5B2 /* Main.storyboard */; };
 		C395DD9927D798F30025B5B2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C395DD9827D798F30025B5B2 /* Assets.xcassets */; };
 		C395DD9C27D798F30025B5B2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C395DD9A27D798F30025B5B2 /* LaunchScreen.storyboard */; };
+		C395DDA427D7A1ED0025B5B2 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C395DDA327D7A1ED0025B5B2 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		C395DD8C27D798F30025B5B2 /* LogIn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LogIn.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C395DD8F27D798F30025B5B2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C395DD9127D798F30025B5B2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C395DD9327D798F30025B5B2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C395DD9327D798F30025B5B2 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		C395DD9627D798F30025B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C395DD9827D798F30025B5B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C395DD9B27D798F30025B5B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C395DD9D27D798F30025B5B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C395DDA327D7A1ED0025B5B2 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				C395DD8F27D798F30025B5B2 /* AppDelegate.swift */,
 				C395DD9127D798F30025B5B2 /* SceneDelegate.swift */,
-				C395DD9327D798F30025B5B2 /* ViewController.swift */,
+				C395DD9327D798F30025B5B2 /* LogInViewController.swift */,
+				C395DDA327D7A1ED0025B5B2 /* WelcomeViewController.swift */,
 				C395DD9527D798F30025B5B2 /* Main.storyboard */,
 				C395DD9827D798F30025B5B2 /* Assets.xcassets */,
 				C395DD9A27D798F30025B5B2 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C395DD9427D798F30025B5B2 /* ViewController.swift in Sources */,
+				C395DD9427D798F30025B5B2 /* LogInViewController.swift in Sources */,
+				C395DDA427D7A1ED0025B5B2 /* WelcomeViewController.swift in Sources */,
 				C395DD9027D798F30025B5B2 /* AppDelegate.swift in Sources */,
 				C395DD9227D798F30025B5B2 /* SceneDelegate.swift in Sources */,
 			);
@@ -306,7 +310,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -334,7 +338,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
