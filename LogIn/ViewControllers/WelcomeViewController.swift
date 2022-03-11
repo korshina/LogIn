@@ -11,12 +11,12 @@ class WelcomeViewController: UIViewController {
     
     @IBOutlet var welcomeLabel: UILabel!
     
-    var welcomeGreeting = "Welcome, "
+    var userName = ""
 
     override func viewDidLoad() {
         super.viewDidLoad()
         setGradient()
-        welcomeLabel.text = welcomeGreeting + "!"
+        welcomeLabel.text = "Welcome, \(userName)!"
     }
     
     
@@ -24,8 +24,8 @@ class WelcomeViewController: UIViewController {
         let gradientLayer = CAGradientLayer()
         gradientLayer.frame = view.frame
         gradientLayer.colors = [
-            UIColor.yellow.cgColor,
-            UIColor.orange.cgColor
+            UIColor.systemBlue.cgColor,
+            UIColor.systemMint.cgColor
         ]
         view.layer.insertSublayer(gradientLayer, at: 0)
     }
