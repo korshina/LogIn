@@ -162,20 +162,78 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a1e-VM-fCE">
-                                <rect key="frame" x="16" y="44" width="288" height="455"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Mlg-08-Th9">
+                                <rect key="frame" x="16" y="54" width="288" height="295"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Дата рождения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBQ-rt-jpN">
+                                        <rect key="frame" x="0.0" y="0.0" width="137" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zYV-Wk-Vy4">
+                                        <rect key="frame" x="0.0" y="30.5" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место жительства:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZ6-8K-7C8">
+                                        <rect key="frame" x="0.0" y="61" width="163" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VzW-UO-c0W">
+                                        <rect key="frame" x="0.0" y="91.5" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Семейное положение:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eri-4o-kvI">
+                                        <rect key="frame" x="0.0" y="122" width="192" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WW8-xz-U8U">
+                                        <rect key="frame" x="0.0" y="152.5" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Место работы:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RQH-lV-agQ">
+                                        <rect key="frame" x="0.0" y="183" width="126" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A38-rZ-Psd">
+                                        <rect key="frame" x="0.0" y="213.5" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Увлечения:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EDM-LJ-fYx">
+                                        <rect key="frame" x="0.0" y="244" width="96.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Описание" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RSz-Be-BBD">
+                                        <rect key="frame" x="0.0" y="274.5" width="80" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="tdo-Ou-oT4"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="tdo-Ou-oT4" firstAttribute="trailing" secondItem="a1e-VM-fCE" secondAttribute="trailing" constant="16" id="O8s-go-na5"/>
-                            <constraint firstItem="a1e-VM-fCE" firstAttribute="top" secondItem="tdo-Ou-oT4" secondAttribute="top" id="SeN-aX-ijw"/>
-                            <constraint firstItem="tdo-Ou-oT4" firstAttribute="bottom" secondItem="a1e-VM-fCE" secondAttribute="bottom" constant="20" id="fjI-2V-8Fy"/>
-                            <constraint firstItem="a1e-VM-fCE" firstAttribute="leading" secondItem="tdo-Ou-oT4" secondAttribute="leading" constant="16" id="lHx-rV-7oW"/>
+                            <constraint firstItem="Mlg-08-Th9" firstAttribute="top" secondItem="tdo-Ou-oT4" secondAttribute="top" constant="10" id="JdI-S9-h3i"/>
+                            <constraint firstItem="tdo-Ou-oT4" firstAttribute="trailing" secondItem="Mlg-08-Th9" secondAttribute="trailing" constant="16" id="m3i-Wb-XYo"/>
+                            <constraint firstItem="Mlg-08-Th9" firstAttribute="leading" secondItem="tdo-Ou-oT4" secondAttribute="leading" constant="16" id="zT1-aN-8eI"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="JBw-Ie-eaa">
@@ -186,14 +244,18 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="descriptionLabel" destination="a1e-VM-fCE" id="ZCE-Da-Emf"/>
+                        <outlet property="adressLabel" destination="VzW-UO-c0W" id="cXz-qt-gJV"/>
+                        <outlet property="dateOfBirthLabel" destination="zYV-Wk-Vy4" id="TfC-HZ-dzn"/>
+                        <outlet property="familyStatusLabel" destination="WW8-xz-U8U" id="KCL-i1-z5S"/>
+                        <outlet property="hobbiesLabel" destination="RSz-Be-BBD" id="qBl-HP-txd"/>
+                        <outlet property="placeOfWorkLabel" destination="A38-rZ-Psd" id="A44-od-XkA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jkj-o4-Wcc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2119" y="899"/>
         </scene>
-        <!--More Info View Controller-->
+        <!--Фото-->
         <scene sceneID="2Ye-Wb-oJf">
             <objects>
                 <viewController id="WIG-UO-ei3" customClass="MoreInfoViewController" customModule="LogIn" customModuleProvider="target" sceneMemberID="viewController">
@@ -214,7 +276,7 @@
                             <constraint firstItem="SYz-yG-5Xq" firstAttribute="top" secondItem="4l5-uw-tNW" secondAttribute="top" constant="20" id="zHC-Jl-cJq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="S2h-Oq-cWg">
+                    <navigationItem key="navigationItem" title="Фото" id="S2h-Oq-cWg">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="Gfj-0K-qFl"/>
                     </navigationItem>
                     <connections>

@@ -17,8 +17,6 @@ class LogInViewController: UIViewController {
     // MARK: Properties
     
     private let user = User.getUser()
-//    private let userName = "korshina"
-//    private let password = "12345"
 
     override func viewDidLoad() {
         super.viewDidLoad()

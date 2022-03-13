@@ -25,15 +25,22 @@ struct User {
 struct Person {
     let name: String
     let surname: String
-    
-    let description: String
+    let dateOfBirth: String
+    let adress: String
+    let familyStatus: String
+    let placeOfWork: String
+    let hobbies: String
     let image: UIImage
     
     static func getPerson() -> Person {
         Person(
             name: "Анастасия",
             surname: "Коршина",
-            description: "29 Лет. Родилась и живу в Санкт-Петербурге. Замужем, есть дочь. В настоящий момент работаю юристом в ООО \"Магистраль северной столицы\" - организации строящей и обслуживающей Западный скоростной диаметр. Хочу поменять сферу деятельности, и поэтому решила пойти в IT. В свободное время люблю читать книги. Преимущественно фантастику и фэнтези. Также люблю кататься на велосипеде, скейте и самокате. И обожаю проводить время со своей семьей.",
+            dateOfBirth: "4 ноября 1992 года",
+            adress: "Санкт-Петербург",
+            familyStatus: "Замужем, есть дочь",
+            placeOfWork: "ООО \"Магистраль северной столицы\"",
+            hobbies: "Люблю читать книги (фантастика, фэнтези); проводить время с семьей; кататься на велосипеде, самокате",            
             image: UIImage(named: "IMG_3479")!
         )
     }

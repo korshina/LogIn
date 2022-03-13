@@ -9,18 +9,18 @@ import UIKit
 
 class InfoViewController: UIViewController {
     
-    @IBOutlet var descriptionLabel: UILabel!
+    @IBOutlet weak var dateOfBirthLabel: UILabel!
+    @IBOutlet weak var adressLabel: UILabel!
+    @IBOutlet weak var familyStatusLabel: UILabel!
+    @IBOutlet weak var placeOfWorkLabel: UILabel!
+    @IBOutlet weak var hobbiesLabel: UILabel!
     
     var user: User?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let user = user else { return }
-        navigationItem.title = "\(user.person.name) \(user.person.surname)"
-        descriptionLabel.text = user.person.description
+        setView()        
     }
-    
-
 
 //     MARK: - Navigation
 
@@ -28,6 +28,17 @@ class InfoViewController: UIViewController {
         if let moreInfoVC = segue.destination as? MoreInfoViewController {
             moreInfoVC.user = user
         }
+    }
+    
+    private func setView() {
+        guard let user = user else { return }
+        navigationItem.title = "\(user.person.name) \(user.person.surname)"
+        
+        dateOfBirthLabel.text = user.person.dateOfBirth
+        adressLabel.text = user.person.adress
+        familyStatusLabel.text = user.person.familyStatus
+        placeOfWorkLabel.text = user.person.placeOfWork
+        hobbiesLabel.text = user.person.hobbies
     }
 
 

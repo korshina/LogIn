@@ -17,7 +17,6 @@ class MoreInfoViewController: UIViewController {
         super.viewDidLoad()
         guard let user = user else { return }
         personImage.image = user.person.image
-        
     }
     
 }
