@@ -31,7 +31,6 @@ class LogInViewController: UIViewController {
         if let welcomeVC = segue.destination as? WelcomeViewController {
             welcomeVC.userName = userName
         }
-        
     }
     
     // MARK: IBActions
