@@ -16,8 +16,9 @@ class LogInViewController: UIViewController {
     
     // MARK: Properties
     
-    private let userName = "korshina"
-    private let password = "12345"
+    private let user = User.getUser()
+//    private let userName = "korshina"
+//    private let password = "12345"
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,18 +29,32 @@ class LogInViewController: UIViewController {
     // MARK: Navigation
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let welcomeVC = segue.destination as? WelcomeViewController {
-            welcomeVC.userName = userName
+        guard let tabBarController = segue.destination as? UITabBarController,
+              let tabBarItems = tabBarController.tabBar.items,
+              let viewControllers = tabBarController.viewControllers else { return }
+        
+        tabBarItems[1].title = "\(user.person.name) \(user.person.surname)"
+        
+        for viewController in viewControllers {
+            if let welcomeVC = viewController as? WelcomeViewController {
+                welcomeVC.user = user
+            } else if let navigationVC = viewController as? UINavigationController {
+                if let infoVC = navigationVC.topViewController as? InfoViewController {
+                    infoVC.user = user
+                }
+                
+            }
         }
+
     }
     
     // MARK: IBActions
     
     @IBAction func logInButtonTapped() {
-        guard userNameTextField.text == userName, passwordTextField.text == password else {
+        guard userNameTextField.text == user.login, passwordTextField.text == user.password else {
             showAlert(
-                title: "Wrong User Name or Password",
-                message: "Enter correct User Name and Password",
+                title: "Неправильный логин или пароль",
+                message: "Введите правильный логин и пароль",
                 textField: passwordTextField)
             return }
         
@@ -48,8 +63,8 @@ class LogInViewController: UIViewController {
     
     @IBAction func forgotButtonsTapped(_ sender: UIButton) {
         sender.tag == 0
-        ? showAlert(title: "Oops", message: "Your User Name is \(userName)")
-        : showAlert(title: "Oops", message: "Your password is \(password)")
+        ? showAlert(title: "Ой!", message: "Ваш логин \(user.login)")
+        : showAlert(title: "Ой!", message: "Ваш пароль \(user.password)")
     }
        
     @IBAction func unwind(for segue: UIStoryboardSegue, sender: Any?) {
