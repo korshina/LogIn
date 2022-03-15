@@ -287,11 +287,11 @@
             </objects>
             <point key="canvasLocation" x="2959" y="899"/>
         </scene>
-        <!--Item-->
+        <!--Страница пользователя-->
         <scene sceneID="jYh-mg-2wL">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="jH0-oc-HAr" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" tag="1" title="Item" image="person" catalog="system" selectedImage="person.fill" id="wWU-eZ-f79"/>
+                    <tabBarItem key="tabBarItem" tag="1" title="Страница пользователя" image="person" catalog="system" selectedImage="person.fill" id="wWU-eZ-f79"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ghg-CV-weR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -312,6 +312,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="vKy-eY-5YU" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Aqh-r8-wLy">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>

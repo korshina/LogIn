@@ -28,10 +28,9 @@ class LogInViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let tabBarController = segue.destination as? UITabBarController,
-              let tabBarItems = tabBarController.tabBar.items,
               let viewControllers = tabBarController.viewControllers else { return }
         
-        tabBarItems[1].title = "\(user.person.name) \(user.person.surname)"
+//        tabBarItems.last?.title = "\(user.person.fullName)"
         
         for viewController in viewControllers {
             if let welcomeVC = viewController as? WelcomeViewController {
@@ -40,7 +39,6 @@ class LogInViewController: UIViewController {
                 if let infoVC = navigationVC.topViewController as? InfoViewController {
                     infoVC.user = user
                 }
-                
             }
         }
 

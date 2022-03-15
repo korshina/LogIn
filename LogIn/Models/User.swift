@@ -25,12 +25,17 @@ struct User {
 struct Person {
     let name: String
     let surname: String
+    
+    var fullName: String {
+        "\(name) \(surname)"
+    }
+    
     let dateOfBirth: String
     let adress: String
     let familyStatus: String
     let placeOfWork: String
     let hobbies: String
-    let image: UIImage
+    let image: String
     
     static func getPerson() -> Person {
         Person(
@@ -41,7 +46,7 @@ struct Person {
             familyStatus: "Замужем, есть дочь",
             placeOfWork: "ООО \"Магистраль северной столицы\"",
             hobbies: "Люблю читать книги (фантастика, фэнтези); проводить время с семьей; кататься на велосипеде, самокате",            
-            image: UIImage(named: "IMG_3479")!
+            image: "IMG_3479"
         )
     }
 }

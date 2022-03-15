@@ -11,12 +11,11 @@ class MoreInfoViewController: UIViewController {
     
     @IBOutlet var personImage: UIImageView!
     
-    var user: User?
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        guard let user = user else { return }
-        personImage.image = user.person.image
+        personImage.image = UIImage(named: user.person.image)
     }
     
 }

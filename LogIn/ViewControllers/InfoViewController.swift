@@ -15,7 +15,7 @@ class InfoViewController: UIViewController {
     @IBOutlet weak var placeOfWorkLabel: UILabel!
     @IBOutlet weak var hobbiesLabel: UILabel!
     
-    var user: User?
+    var user: User!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,8 +31,7 @@ class InfoViewController: UIViewController {
     }
     
     private func setView() {
-        guard let user = user else { return }
-        navigationItem.title = "\(user.person.name) \(user.person.surname)"
+        title = "\(user.person.fullName)"
         
         dateOfBirthLabel.text = user.person.dateOfBirth
         adressLabel.text = user.person.adress
